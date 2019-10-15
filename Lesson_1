@@ -17,7 +17,7 @@
       
 Уравнения линейны.
 
-# task3
+# task 3
 
 x2 + y∙x – 9 = 0       6x2 - 9 = 0    6x2 - 9 = 0    x1,2 = +- √1,5
                  <=>               <=>           <=>
@@ -25,8 +25,19 @@ x – y/5 = 0            y = 5x          y = 5x         y1,2 = +-5 √1,5
 
 Система нелинейна, так как первое нелинейно.
 
-# task4
+# task 4
 
  xy = 48          x ( 14 - x) = 48     x2 - 14x + 48 = 0   x = 8
              <=>                       <=>
 2x + 2y = 28      y = 14 - x               y = 14 - x      y = 6 (в силу симметрии)
+
+# task 5 "Программа на Питоне"
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-10, 10, 100)
+y1 = np.cos(x)
+y2 = np.cos(2*x)
+plt.plot(x, y1, x, y2)
+plt.show()
