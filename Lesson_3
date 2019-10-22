@@ -1,0 +1,9 @@
+# task 1
+
+1. (10,10,0)
+
+2. import math
+   def lenvec(x, y, z) :
+    print(math.sqrt(x**2+y**2+z**2))
+    
+ # task 2
