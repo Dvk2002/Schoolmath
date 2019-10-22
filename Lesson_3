@@ -7,3 +7,50 @@
     print(math.sqrt(x**2+y**2+z**2))
     
  # task 2
+ 
+ Оси растягиваются в соответствии с разрешением экрана.
+ Решение : plt.axes().set_aspect('equal')
+ 
+ # task 3
+ 
+ import matplotlib.pyplot as plt
+import numpy as np
+
+
+def round(r, x0, y0):
+
+    x = np.linspace(-r + x0, r + x0, 1000)
+    y1 = y0 + np.sqrt(r**2 - (x - x0)**2)
+    y2 = y0 -(np.sqrt(r**2 - (x - x0)**2))
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.plot(x, y1, x, y2)
+    plt.show()
+    
+round(30, -20, -30)
+def elips1(a, b, x0, y0):
+    x = np.linspace(-a + x0, a + x0, 1000)
+    y1 = y0 + (np.sqrt(b**2 - (b*(x - x0)/a)**2))
+    y2 = y0 - ((np.sqrt(b**2 - (b*(x - x0)/a)**2)))
+    plt.xlabel('x')
+    plt.ylabel('y')
+    #plt.axes().set_aspect('equal')
+    plt.plot(x, y1, x, y2)
+    plt.show()
+#elips1(20,50, 30, 10)
+
+
+
+def hyper(a, b, x0, y0):
+    x1 = np.linspace(-a - 50 + x0, -a + x0, 1000)
+    x2 = np.linspace(a + x0 , a + x0 +50, 100)
+    y1 = y0 + (np.sqrt(((b*(x1 - x0)/a)**2) - b**2))
+    y2 = y0 - (np.sqrt(((b*(x1 - x0)/a)**2) - b**2))
+    y3 = y0 + (np.sqrt(((b * (x2 - x0)/ a) ** 2) - b ** 2))
+    y4 = y0 - (np.sqrt(((b*(x2 - x0)/a)**2) - b**2))
+    plt.xlabel('x')
+    plt.ylabel('y')
+    #plt.axes().set_aspect('equal')
+    plt.plot(x1, y1, x1, y2, x2, y3, x2, y4)
+    plt.show()
+hyper(10,10, 10, 30)
