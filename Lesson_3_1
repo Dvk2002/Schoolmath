@@ -57,3 +57,35 @@ def hyper(a, b, x0, y0):
     plt.show()
     
 hyper(10,10, 10, 30)
+
+# task 4
+
+1. Ax + By + Cz = 0
+
+2. Должно выполняться условие :
+
+A1X1 + B1Y1 + C1Z1 + D1 = 0, A1X2 + B1Y2 + C1Z2 + D1 = 0
+
+# task 5
+
+1юfrom pylab import *
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = figure()
+ax = Axes3D(fig)
+X = np.arange(-10, 10, 0.5)
+Y = np.arange(-10, 10, 0.5)
+X, Y = np.meshgrid(X, Y)
+Z1 = 2*X - 6*Y
+Z2 = 2*X - 6*Y + 10
+Z3 = X**2 + Y**2 - 2*X*Y + 2*X + 2*Y
+Z4 = X**2 - Y**2 + 2*X*Y - 2*X - 2*Y
+ax.plot_wireframe(X, Y, Z1)
+ax.plot_wireframe(X, Y, Z2)
+ax.plot_wireframe(X, Y, Z3)
+ax.plot_wireframe(X, Y, Z4)
+show()
+
+
