@@ -11,3 +11,48 @@ y2 = 4* np.cos(x - 5) + 8
 y3 = 6* np.cos(x - 7) + 11
 plt.plot(x, y1, x, y2, x, y3)
 plt.show()
+
+# task 2
+
+X1 = a11x1 + a12y1 + a13      X2 - X1 = T, Y2 - Y1 = V
+Y1 = a21x1 + a22y1 + a23      x2 - x1 = t, y2 - y1 = v 
+X2 = a11x2 + a12y2 + a13      T**2 + V**2 = (a11t + a12v)**2 + 
+Y2 = a21x2 + a22y2 + a23  =>  (a21t + a22v)**2                 =>  T**2 + V**2 = t**2 + v**2 чтд
+a11**2 + a21**2 = 1           a11**2 + a21**2 = 1                    
+a12**2 + a22**2 = 1           a12**2 + a22**2 = 1    
+a11a12 + a21a22 = 0           a11a12 + a21a22 = 0 
+
+# task 3
+
+1. import math
+   
+   def poltodec(r, a):
+       T = [r*math.cos(a), r*math.sin(a)]
+       print (T) 
+ 2. import matplotlib.pyplot as plt
+    import numpy as np
+    
+    def roundpol(r, x0, y0):
+    a = np.linspace(0 ,2* np.pi, 1000)
+    x = x0 + r*np.cos(a)
+    y = y0 + r*np.sin(a)
+    plt.xlabel('x')
+    plt.ylabel('y')
+    #plt.axes().set_aspect('equal')
+    plt.plot(x, y)
+    plt.show()
+    roundpol(30, 10, -5)
+   
+  3. def linepol(a, y0):
+    r = np.linspace(0, 30, 1000)
+    x1 = r * np.cos(a)
+    y1 = y0 + r * np.sin(a)
+    x2 = - r * np.cos(a)
+    y2 = y0 - r * np.sin(a)
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.axes().set_aspect('equal')
+    plt.plot(x1, y1, x2, y2)
+    plt.axes().set_aspect('equal')
+    plt.show()
+   
