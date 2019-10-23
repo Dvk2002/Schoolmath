@@ -1,0 +1,13 @@
+# task 1
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.xlabel('x')
+plt.ylabel('y')
+x = np.linspace(-10, 10, 100)
+y1 = 2* np.cos(x - 3) + 5
+y2 = 4* np.cos(x - 5) + 8
+y3 = 6* np.cos(x - 7) + 11
+plt.plot(x, y1, x, y2, x, y3)
+plt.show()
