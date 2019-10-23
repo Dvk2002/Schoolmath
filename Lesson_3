@@ -13,7 +13,7 @@
  
  # task 3
  
- import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -28,6 +28,7 @@ def round(r, x0, y0):
     plt.show()
     
 round(30, -20, -30)
+
 def elips(a, b, x0, y0):
     x = np.linspace(-a + x0, a + x0, 1000)
     y1 = y0 + (np.sqrt(b**2 - (b*(x - x0)/a)**2))
@@ -37,7 +38,8 @@ def elips(a, b, x0, y0):
     #plt.axes().set_aspect('equal')
     plt.plot(x, y1, x, y2)
     plt.show()
-#elips(20,50, 30, 10)
+    
+elips(20,50, 30, 10)
 
 
 
@@ -53,4 +55,5 @@ def hyper(a, b, x0, y0):
     #plt.axes().set_aspect('equal')
     plt.plot(x1, y1, x1, y2, x2, y3, x2, y4)
     plt.show()
+    
 hyper(10,10, 10, 30)
