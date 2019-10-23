@@ -28,7 +28,7 @@ def round(r, x0, y0):
     plt.show()
     
 round(30, -20, -30)
-def elips1(a, b, x0, y0):
+def elips(a, b, x0, y0):
     x = np.linspace(-a + x0, a + x0, 1000)
     y1 = y0 + (np.sqrt(b**2 - (b*(x - x0)/a)**2))
     y2 = y0 - ((np.sqrt(b**2 - (b*(x - x0)/a)**2)))
@@ -37,13 +37,13 @@ def elips1(a, b, x0, y0):
     #plt.axes().set_aspect('equal')
     plt.plot(x, y1, x, y2)
     plt.show()
-#elips1(20,50, 30, 10)
+#elips(20,50, 30, 10)
 
 
 
 def hyper(a, b, x0, y0):
     x1 = np.linspace(-a - 50 + x0, -a + x0, 1000)
-    x2 = np.linspace(a + x0 , a + x0 +50, 100)
+    x2 = np.linspace(a + x0 , a + x0 +50, 1000)
     y1 = y0 + (np.sqrt(((b*(x1 - x0)/a)**2) - b**2))
     y2 = y0 - (np.sqrt(((b*(x1 - x0)/a)**2) - b**2))
     y3 = y0 + (np.sqrt(((b * (x2 - x0)/ a) ** 2) - b ** 2))
