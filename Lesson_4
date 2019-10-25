@@ -1,0 +1,9 @@
+# task 1
+
+sin(x)/x = 0 <=> sin(x) = 0, x!=0 <=> x = 2*pi*T, T - int, T!=0.
+
+# task 2
+
+y=k1*x+b1     k2*x+b2 = k1*x+b1    (b2-b1)/(k1-k2) = (b3-b2)/(k2-k3)
+y=k2*x+b2 <=> k3*x+b3 = k2*x+b2 => 
+y=k3*x+b3
