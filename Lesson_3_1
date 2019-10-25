@@ -8,7 +8,7 @@
     
  # task 2
  
- Масштаб осей.Оси растягиваются в соответствии с разрешением экрана.
+ Масштаб осей.Оси растягиваются в соответствии с разрешением экрана или условиями задачи.
  Решение : plt.axes().set_aspect('equal')
  
  # task 3
@@ -68,7 +68,7 @@ A1X1 + B1Y1 + C1Z1 + D1 = 0, A1X2 + B1Y2 + C1Z2 + D1 = 0
 
 # task 5
 
-1юfrom pylab import *
+from pylab import *
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import numpy as np
