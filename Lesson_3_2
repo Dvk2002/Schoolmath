@@ -50,7 +50,7 @@ a11a12 + a21a22 = 0           a11a12 + a21a22 = 0
     plt.ylabel('y')
     plt.polar(x, y)
     plt.show()
-    plt.show()
+    
     
  # task 4
  1.
