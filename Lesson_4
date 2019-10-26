@@ -13,3 +13,21 @@ y=k3*x+b3
  Пусть  x = x0 + ta, y = y0 + va, 0 <= x0, y0 <= a , t, v ∈ Z.
  Тогда игла не пересекает если : ta < x0 + ta + bcosA < (t+1)a <=> 0 < x0 + bcosA < a
                                  va < y0 + va + bsinA < (v+1)a     0 < y0 + bsinA < a
+
+# task 4
+
+sin(а*x)=0 <=> x = k * pi / a , k - int.
+0.01<a<0.02, 100<х<500 => k = 1, 2, 3 
+
+import matplotlib.pyplot as plt
+import numpy as np
+a = np.linspace(0.01, 0.02, 100)
+x1 = np.pi/a
+x2 = 2*np.pi/a
+x3 = 3*np.pi/a
+plt.xlabel('a')
+plt.ylim(100, 500)
+plt.ylabel('x')
+plt.plot(a, x1, a, x2, a, x3)
+plt.show()
+
