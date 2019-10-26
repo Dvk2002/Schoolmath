@@ -31,3 +31,22 @@ plt.ylabel('x')
 plt.plot(a, x1, a, x2, a, x3)
 plt.show()
 
+# task 17.6.2
+
+cos(a) = (28 - 3)/(5*sqrt(50))=sqrt(1/2)
+a = pi/4
+
+# task 17.6.4
+
+a = 0
+
+# task 17.6.5
+
+y = 1/2(x-1)**2 - 3  - парабола
+
+# task 17.6.6
+
+3(x+2)**2 + 5(y-6)**2
+
+
+
