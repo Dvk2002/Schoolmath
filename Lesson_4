@@ -10,7 +10,7 @@ y=k3*x+b3
  
  # task 3
  
- Пусть  x = x0 + ta, y = y0 + va, 0 <= x0, y0 <= a , t, v ∈ Z.
+ Пусть  x = x0 + ta, y = y0 + va, 0 <= x0 <= a, 0 <= y0 <= a , t, v ∈ Z.
  Тогда игла не пересекает если : ta < x0 + ta + bcosA < (t+1)a <=> 0 < x0 + bcosA < a
                                  va < y0 + va + bsinA < (v+1)a     0 < y0 + bsinA < a
 
