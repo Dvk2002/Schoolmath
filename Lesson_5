@@ -33,3 +33,15 @@ plt.xlabel('y')
 plt.ylabel('Probability')
 plt.show()
 
+# task 3
+1.
+
+      2    4
+p = C 4/ 2   = 6/16 = 0,375  
+при n = 10000, σ = 100
+
+2. 
+
+При n = 1000, k = 1
+     1
+p = c4/
