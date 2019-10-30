@@ -1,0 +1,8 @@
+# task_1
+
+import numpy as np
+for i in range(10):
+    a = input()
+    x = np.random.randint
+    (0,37)
+    print(x)
