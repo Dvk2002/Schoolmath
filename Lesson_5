@@ -44,3 +44,16 @@ p = C 4/ 2   = 6/16 = 0,375
 
      1    5
 p = c5/ 2   = 5 / 32 = 0,1562
+
+# task 4
+
+import itertools
+for p in itertools.permutations("012345", 3):
+    print(('').join(str(x) for x in p))
+print()
+for p in itertools.combinations('012345', 3):
+    print(('').join(p))
+print()
+for p in itertools.product('012345', repeat=3):
+    print(('').join(p))
+print()
