@@ -57,3 +57,7 @@ print()
 for p in itertools.product('012345', repeat=3):
     print(('').join(p))
 print()
+
+# task 5
+
+R = np.sum((x-np.mean(x))*(y-np.mean(y)))/np.sqrt(np.sum((x-np.mean(x))**2)*np.sum((y-np.mean(y))**2)))
