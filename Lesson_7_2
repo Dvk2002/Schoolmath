@@ -111,4 +111,4 @@ B1 = np.dot(np.transpose(Q), B)[:2]
 print(B1)
 print(np.linalg.solve(R1, B1))
 
-[1.50000000e+00 3.92767275e-15]
+[1.50000000e+00 3.92767275e-15  0]
